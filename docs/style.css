@@ -591,29 +591,29 @@ video {
   height: auto;
 }
 
+input {
+  font-weight: 900;
+}
+
 .fatheader {
   font-size: 2.25rem;
-  font-weight: 900;
-  letter-spacing: -0.025em;
 }
 
 .fatparagraph {
-  font-size: 1.25rem;
-  font-weight: 900;
-  letter-spacing: -0.025em;
+  font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
+.fattable {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
   .fatheader {
     font-size: 4rem;
-    font-weight: 900;
-    letter-spacing: -0.025em;
   }
 
   .fatparagraph {
     font-size: 2.25rem;
-    font-weight: 900;
-    letter-spacing: -0.025em;
   }
 }
 

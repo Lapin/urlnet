@@ -1,0 +1,29 @@
+.results {
+    display: grid;
+    grid-template-columns: 2fr minmax(0, 5.5fr) 2fr;
+  }
+  
+.cheekybaslik {
+    display: none;
+}
+  
+@media only screen and (max-width: 767px) {
+    .results {
+        grid-template-columns: 1fr;
+    }
+    .thead {
+        display: none;
+    }
+    .cheekybaslik {
+        display: block;
+    }
+    .trow {
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
+  
+
+
+  

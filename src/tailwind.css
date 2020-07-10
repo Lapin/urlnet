@@ -2,29 +2,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
+input {
+    @apply font-black;
+}
 
 .fatheader {
-    @apply text-4xl font-black tracking-tight;
+    @apply text-4xl;
 }
 
 .fatparagraph {
-    @apply text-xl font-black tracking-tight;
+    @apply text-2xl;
 }
 
+.fattable {
+    @apply text-2xl;
+}
 
-@screen md {
-
+@screen lg {
     .fatheader {
-        @apply text-6xl font-black tracking-tight; 
+        @apply text-6xl;
     }
-
     .fatparagraph {
-        @apply text-4xl font-black tracking-tight;
+        @apply text-4xl;
     }
-
 }
-
 
 @tailwind components;
+
 @tailwind utilities;
 
