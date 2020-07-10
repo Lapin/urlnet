@@ -1,0 +1,30 @@
+@tailwind base;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+
+.fatheader {
+    @apply text-4xl font-black tracking-tight;
+}
+
+.fatparagraph {
+    @apply text-xl font-black tracking-tight;
+}
+
+
+@screen md {
+
+    .fatheader {
+        @apply text-6xl font-black tracking-tight; 
+    }
+
+    .fatparagraph {
+        @apply text-4xl font-black tracking-tight;
+    }
+
+}
+
+
+@tailwind components;
+@tailwind utilities;
+
