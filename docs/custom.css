@@ -1,29 +1,115 @@
-.results {
-    display: grid;
-    grid-template-columns: 2fr minmax(0, 5.5fr) 2fr;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+* {
+    border: none;
+    text-align: center;
+    color: #1a1a1a;
   }
   
-.cheekybaslik {
-    display: none;
+html {
+    font-family: "Inter";
+    font-weight: 900;
+    letter-spacing: -0.025rem;
 }
-  
-@media only screen and (max-width: 767px) {
-    .results {
-        grid-template-columns: 1fr;
+
+.align {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+
+.container {
+    max-width: 640px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
     }
-    .thead {
-        display: none;
+
+    .hero {
+        margin-top: 6rem;
+        margin-bottom: 4rem;
     }
-    .cheekybaslik {
-        display: block;
-    }
-    .trow {
-        display: flex;
-        flex-direction: column;
+
+    .trigger {
+        margin-top: 4rem;
+        margin-bottom: 6rem;
     }
 }
-  
   
 
 
-  
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fontlarge {
+    font-size: 2rem;
+}
+
+.hero {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.trigger {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.trigger:hover {
+    text-decoration: underline;
+}
+
+
+input {
+    width: 100%;
+    background-color: #EBEBEB;
+}
+
+input[type=text] {
+    font-size: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+    color: #A5A5A5;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+
+.lightgray {
+    color: #EBEBEB;
+}
+
+.midgray {
+    color: #A5A5A5;
+}
+
+.white {
+    color: #fff;
+}
+
+.darkgray {
+    color: #808080;
+}
+
+.info {
+    color: #A5A5A5;
+}
+
+.info:hover {
+    color: #808080;
+}
+
+.result {
+    background-color: #1a1a1a;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

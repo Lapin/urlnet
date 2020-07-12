@@ -21,5 +21,8 @@
     "laravel-mix": "^5.0.4",
     "postcss-nested": "^4.2.2",
     "tailwindcss": "^1.4.6"
+  },
+  "dependencies": {
+    "normalize": "^0.3.1"
   }
 }
