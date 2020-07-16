@@ -9,45 +9,55 @@
 </head>
 <body>
 
-    <div style="font-size: 4rem; margin-top: 2rem;">
-        🤏
-    </div>
-    <div class="heroLogo">
-        urlnet.xyz
-    </div>
+    <a href="https://urlnet.xyz">
+        <div style="font-size: 4rem; margin-top: 2rem;">
+            🤏
+        </div>
+        <div class="heroLogo">
+            urlnet.xyz
+        </div>
+    
+        <div class="heroIntro">dead simple URL shortner</div>
+    </a>
 
-    <div class="heroIntro">dead simple URL shortner</div>
-
-    <section>
-        <form class="wrapper" action="text input">
+    <section id="landing">
+        <div class="wrapper formWrapper" >
             <div class="">
-                <input type="text" name="" id="" placeholder="your ultra long drive link">
+                <input type="text" id="textInput" placeholder="your ultra long drive link" autocomplete="off"
+                onkeydown="pressEnter(this)">
             </div>
-            <input class="submitButton" type="submit" value="shorten your url">
-        </form>
+            <input class="submitButton" id="triggerButton" onclick="getURLInput()" type="button" value="shorten your url">
+        </div>
+
+        <!-- <div class="wrapper notLink">
+            <div> That's not a link</div>
+            <img src="https://media.giphy.com/media/3o7btT1T9qpQZWhNlK/giphy.gif" alt="" style="">
+        </div> -->
+
     </section>
 
-    <section class="served">
+    <section id="results" class="served">
         <div class="urlResult">
-            <div class="urlNet">http://urlnet.xyz/A3FDS3</div>
-            <div class="copyThing">click if too lazy to cmd+c</div>
+            <div class="urlNet" id="urlNet">http://urlnet.xyz/A3FDS3</div>
+            <div class="copyThing" id="copyThing" onclick="copyToClipboard('urlNet')">click if too lazy to cmd+c</div>
         </div>
         <div class="info">
             <div>
                 now redirects to:
             </div>
-            <div class="userInput">
+            <div class="userInput" id="redirectSource">
                 https://fonts.google.com/specimen/Roboto+Mono?sidebar.open&selection.family=Roboto+Mono:wght@300
             </div>
         </div>
-    </section>
 
-    <section>
         <div class="noCookie">
-
+    
             <div class="noCookieText">As we don't store any cookies on your device, if you close this window, your url is gone. We don't associate url's with users. Which also means you're going to see this reminder everytime. Sorry. </div>
         </div>
+
     </section>
+
+
 
 
     <footer class="">
@@ -58,12 +68,15 @@
         </div>
 
         <div>
-            <div style="padding: 0 2rem 2rem 2rem; opacity: 50%;">we don't put any cookies on your device and by using our service you agree to terms in return.</div>
+            <div style="padding: 0 2rem 2rem 2rem; opacity: 50%;">you're agreeing to the terms if you use this service. in return, we don't store cookies respect your privacy.</div>
             <img srcset="./cookies.png 2x" alt="" style="  display: block;
             margin-left: auto;
             margin-right: auto;">
         </div>
     
     </footer>
+
+    
+    <script src="./script.js"></script>
 </body>
 </html>

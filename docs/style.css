@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+a {
+    color: #393E46;
+    text-decoration: none;
+}
 
 .wrapper {
     max-width: 640px;
@@ -26,8 +30,24 @@ body {
     font-weight: 700;
 }
 
-form {
+input:focus, textarea:focus, select:focus{
+
+    outline: none;
+
+}
+
+.formWrapper {
     padding: 0 2rem 0 2rem;
+}
+
+.notLink {
+    padding: 2rem;
+    width: 50%;
+}
+
+.notLink img{
+    max-width:100%;
+    height:auto;
 }
 
 input[type=text] {
@@ -43,7 +63,11 @@ input[type=text] {
     border-color: #C1D2DB;
 }
 
-input[type=submit] {
+input[type=text]:focus {
+    color: #393E46;
+}
+
+input[type=button] {
     background-color: #393E46;
     border: none;
     padding: 1rem 3.25rem;
@@ -55,6 +79,8 @@ input[type=submit] {
     -o-transition: background .25s ease;
     transition: background .25s ease;
 }
+
+
 
 input[type=submit]:hover {
     background-color: #282c31;
