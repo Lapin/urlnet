@@ -70,6 +70,7 @@ function action(i) {
         mockDataGrab();
     } else {
         document.getElementById('notLink').style.display = 'block'
+        textInputDOM.style.borderColor = '#fa7e76'
     }
 }
 
