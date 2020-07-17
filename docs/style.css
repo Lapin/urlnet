@@ -30,6 +30,11 @@ a {
     font-weight: 700;
 }
 
+input {
+    -webkit-appearance: none;
+    text-align: center;
+}
+
 input:focus, textarea:focus, select:focus{
 
     outline: none;
@@ -49,6 +54,13 @@ input:focus, textarea:focus, select:focus{
     max-width:100%;
     height:auto;
 }
+
+@supports (-webkit-touch-callout: none) {
+    input[type=text] {
+        width: auto;
+    }
+}
+
 
 input[type=text] {
     width: 100%;
@@ -130,7 +142,7 @@ input[type=submit]:hover {
 .userInput {
     opacity: 80%;
     word-wrap: break-word;
-    padding: 0.75rem 2rem 0 2rem;
+    padding: 0rem 2rem;
 }
 
 .noCookie {
@@ -157,7 +169,8 @@ footer {
 }
 
 .footerContent {
-    margin: 2rem 2rem 2rem 2rem;
+    margin: 1rem 2rem;
+    font-size: 0.875rem;
 }
 
 .footerContent div {
