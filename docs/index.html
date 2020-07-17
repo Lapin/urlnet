@@ -22,18 +22,21 @@
         <div class="heroIntro">dead simple URL shortner</div>
     </a>
 
-    <div class="wrapper">
+    <div class="wrapper" id="inputStuff">
     <form action="" class="formWrapper">
         <input class="textInput" id="textInput" type="text" placeholder="your ultra long drive link" autocomplete="off" onkeydown="pressEnter(this)">
         <input class="submitButton" id="triggerButton" onclick="getURLInput()" type="button" value="shorten your url">
     </form>
+
+    <div class="wrapper notLink" id="notLink">
+        <img src="https://media.giphy.com/media/3o7btT1T9qpQZWhNlK/giphy.gif" alt="" style="">
+        <div>frank says it's not a link.</div>
+    </div>
+        
+
     </div>
 
 
-   
-
-
-    
 
     <section id="results" class="served">
         <div class="urlResult">

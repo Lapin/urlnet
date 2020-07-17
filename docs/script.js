@@ -22,7 +22,7 @@
 
 // Collect DOM Elements
 
-const landingDOM = document.getElementById('landing');
+const landingDOM = document.getElementById('inputStuff');
 const textInputDOM = document.getElementById('textInput');
 const triggerDOM = document.getElementById('triggerButton');
 const resultsDOM = document.getElementById('results')
@@ -69,7 +69,7 @@ function action(i) {
         verifiedUrDB = textInputDOM.value;
         mockDataGrab();
     } else {
-        alert(`yo, something's wrong here`) // 2d if not say something
+        document.getElementById('notLink').style.display = 'block'
     }
 }
 

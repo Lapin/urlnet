@@ -55,6 +55,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 .notLink {
+    display: none;
     padding: 2rem;
     width: 50%;
 }
@@ -62,6 +63,7 @@ input:focus, textarea:focus, select:focus{
 .notLink img{
     max-width:100%;
     height:auto;
+    border-radius: 10px;
 }
 
 .formWrapper {
@@ -80,6 +82,21 @@ input:focus, textarea:focus, select:focus{
     border-color: #C1D2DB;
     padding: 1rem 0;
 }
+
+
+input[type=button] {
+background-color: #393E46;
+border: none;
+padding: 1rem 3.25rem;
+border-radius: 4px;
+color: white;
+-webkit-transition: background .25s ease;
+-moz-transition: background .25s ease;
+-ms-transition: background .25s ease;
+-o-transition: background .25s ease;
+transition: background .25s ease;
+}
+
 
 
 .urlResult {
