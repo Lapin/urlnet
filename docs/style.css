@@ -61,41 +61,8 @@ input:focus, textarea:focus, select:focus{
     }
 }
 
-
-input[type=text] {
-    width: 100%;
-    margin: 2rem 0 2rem 0;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;  
-    font-size: 1.5625rem;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #C1D2DB;
-}
-
-input[type=text]:focus {
-    color: #393E46;
-}
-
-input[type=button] {
-    background-color: #393E46;
-    border: none;
-    padding: 1rem 3.25rem;
-    border-radius: 4px;
-    color: white;
-    -webkit-transition: background .25s ease;
-    -moz-transition: background .25s ease;
-    -ms-transition: background .25s ease;
-    -o-transition: background .25s ease;
-    transition: background .25s ease;
-}
-
-
-
-input[type=submit]:hover {
-    background-color: #282c31;
+.textInput {
+    border: 
 }
 
 
