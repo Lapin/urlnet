@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<body>
-
+<body class="gereksizFlex">
+    
+    <div class="gereksizFlexContent">
+        
     <a href="https://urlnet.xyz">
         <div style="font-size: 4rem; margin-top: 2rem;">
             🤏
@@ -20,11 +22,11 @@
         <div class="heroIntro">dead simple URL shortner</div>
     </a>
 
-
-    <form action="">
-        <input class="textInput" type="text">
+    <div class="wrapper">
+    <form action="" class="formWrapper">
+        <input class="textInput" type="text" placeholder="put your url here">
     </form>
-
+    </div>
 
 
     <section id="results" class="served">
@@ -47,7 +49,7 @@
         </div>
 
     </section>
-
+    </div>
 
 
 
@@ -59,14 +61,14 @@
         </div>
 
         <div>
-            <div style="padding: 0 0.75rem 0.75rem 0.75rem; opacity: 50%; font-size: 0.875rem;">by using this service you're agreeing to our terms, in return we don't track you.</div>
+            <div class="disclamerText">by using this service you're agreeing to our terms, in return we don't track you.</div>
             <img srcset="./cookies.png 2x" alt="" style="  display: block;
             margin-left: auto;
             margin-right: auto;">
         </div>
     
     </footer>
-
+ 
     
     <script src="./script.js"></script>
 </body>
