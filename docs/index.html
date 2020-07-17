@@ -24,10 +24,16 @@
 
     <div class="wrapper">
     <form action="" class="formWrapper">
-        <input class="textInput" type="text" placeholder="put your url here">
+        <input class="textInput" id="textInput" type="text" placeholder="your ultra long drive link" autocomplete="off" onkeydown="pressEnter(this)">
+        <input class="submitButton" id="triggerButton" onclick="getURLInput()" type="button" value="shorten your url">
     </form>
     </div>
 
+
+   
+
+
+    
 
     <section id="results" class="served">
         <div class="urlResult">
