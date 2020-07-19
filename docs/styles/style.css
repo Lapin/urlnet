@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&display=swap');
+
 
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Sora', sans-serif;
     font-weight: 400;
     background-color: #F8FAFD;
     color: #393E46;
@@ -24,8 +28,6 @@ a {
 .gereksizFlexContent {
     flex: 1;
 }
-
-
 
 
 .wrapper {
@@ -85,7 +87,7 @@ input:focus, textarea:focus, select:focus{
 
 
 input[type=button] {
-background-color: #393E46;
+background-color: #8e9197;
 border: none;
 padding: 1rem 3.25rem;
 border-radius: 4px;
@@ -96,7 +98,6 @@ color: white;
 -o-transition: background .25s ease;
 transition: background .25s ease;
 }
-
 
 
 .urlResult {
@@ -162,48 +163,37 @@ transition: background .25s ease;
 
 
 
-
-/* footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-} */
-
-
 .footerContent {
-    margin: 1rem 2rem;
+    margin-bottom: 0.5rem;
     font-size: 0.875rem;
+    color: #767676;
 }
 
-.footerContent div {
-    display: inline;
-    padding: 0.75rem 1rem;
-    transition: -webkit-transition: background 0.5s ease;
-                -moz-transition: background 0.5s ease;
-                -ms-transition: background 0.5s ease;
-                -o-transition: background 0.5s ease;
-                -webkit-transition: color 0.5s ease;
-                -moz-transition: color 0.5s ease;
-                -ms-transition: color 0.5s ease;
-                -o-transition: color 0.5s ease;
-                -webkit-transition: box-shadow 0.5s ease;
-                -moz-transition: box-shadow 0.5s ease;
-                -ms-transition: box-shadow 0.5s ease;
-                -o-transition: box-shadow 0.5s ease;
-    transition: background 0.5s ease, color 0.5s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    box-shadow: 0 0 0 0 (0,0,0,0);   
+
+.footerContent a {
+    font-weight: 500;
 }
- 
+.footerContent a:hover {
+    text-decoration: underline;
+}
+
 
 .disclamerText {
     padding: 0 2rem 0.75rem 2rem; 
-    opacity: 50%; 
     font-size: 0.875rem;
+    color: #afafaf;
+
 }
 
-.footerContent div:hover {
+.disclamerText a {
+    font-weight: 500;
+}
+
+.disclamerText a:hover {
+    text-decoration: underline;
+}
+
+/* .footerContent div:hover {
     background-color: #dde2eb;
     padding: 0.75rem 1rem;
     border-radius: 10px;
@@ -215,7 +205,7 @@ transition: background .25s ease;
     0 8.8px 29.7px rgba(0, 0, 0, 0.036),
     0 21px 71px rgba(0, 0, 0, 0.05)
   ;
-}
+} */
 
 @media only screen 
 and (min-device-width : 375px) 

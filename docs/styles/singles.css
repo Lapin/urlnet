@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&display=swap');
+
+html {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    background-color: #F8FAFD;
+    color: #393E46;
+    letter-spacing: -0.5px;
+}
+
+a {
+    font-weight: 500;
+    color: #393E46;
+}
+
+body {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 2rem;
+}
+
+header {
+    padding: 2rem 0 1rem 0 ;
+}
+
+
+.globalFlex {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 1.5rem;
+}
+
+.subheader {
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem;
+}
+
+.profileWrapper {
+    width: 10rem;
+}
+
+.profileCard {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #C1D2DB;
+    border-radius: 1rem;
+}
+
+.profileImage {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 10rem;
+}
+
+
+footer {
+    padding: 2rem 0;
+}

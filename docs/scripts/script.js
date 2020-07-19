@@ -124,16 +124,9 @@ function copyToClipboard(elementId) {
 
 // Text Input Enter Key Listener 
 
-
-
-
-/* <input type="text" placeholder="some text" class="search" />  
-<input type="text" placeholder="some text" class="search" onkeydown="search(this)"/> */
-
-// JS Code
-
 function pressEnter(ele) {
     if(event.key === 'Enter') {
         triggerDOM.click() 
     }
 }
+
