@@ -1,0 +1,223 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&display=swap');
+
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    background-color: #F8FAFD;
+    color: #393E46;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+a {
+    color: #393E46;
+    text-decoration: none;
+}
+
+.gereksizFlex {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.gereksizFlexContent {
+    flex: 1;
+}
+
+
+.wrapper {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heroIntro {
+    font-size: 1.5625rem;
+}
+
+.heroLogo {
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+
+input {
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+input:focus, textarea:focus, select:focus{
+
+    outline: none;
+
+}
+
+.notLink {
+    display: none;
+    padding: 2rem;
+    width: 50%;
+}
+
+.notLink img{
+    max-width:100%;
+    height:auto;
+    border-radius: 10px;
+}
+
+.formWrapper {
+    padding: 0 2rem;
+}
+
+.textInput {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2rem 0;
+    min-width: 320px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C1D2DB;
+    padding: 1rem 0;
+}
+
+
+input[type=button] {
+background-color: #8e9197;
+border: none;
+padding: 1rem 3.25rem;
+border-radius: 4px;
+color: white;
+-webkit-transition: background .25s ease;
+-moz-transition: background .25s ease;
+-ms-transition: background .25s ease;
+-o-transition: background .25s ease;
+transition: background .25s ease;
+}
+
+
+.urlResult {
+    margin: 2rem 0 1rem 0;
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+    padding:  3rem 0 2rem 0; 
+    font-size: 1.5rem;
+    border-width:  1px  0 1px 0;
+    border-style: solid;
+    border-color: #DDDDDD;
+}
+
+.copyThing {
+    opacity: 30%;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+    background-color: none;
+    -webkit-transition: background 100ms ease-in;
+    -moz-transition: background 100ms ease-in;
+    -ms-transition: background 100ms ease-in;
+    -o-transition: background 100ms ease-in;
+    -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    -ms-transition: opacity 100ms ease-in;
+    -o-transition: opacity 100ms ease-in;
+    transition: background 100ms ease-in, opacity 100ms ease-in;
+}
+
+.copyThing:hover {
+    opacity: 100%;
+    background-color: #f1f1f1;
+}
+
+.urlNet:hover {
+    text-decoration: underline;
+}
+
+.userInput {
+    opacity: 80%;
+    word-wrap: break-word;
+    padding: 0rem 2rem;
+}
+
+.noCookie {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    opacity: 30%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c0bfbf;
+    background-color: #dee1e6;
+    border-radius: 10px;
+}
+
+
+
+.footerContent {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #767676;
+}
+
+
+.footerContent a {
+    font-weight: 500;
+}
+.footerContent a:hover {
+    text-decoration: underline;
+}
+
+
+.disclamerText {
+    padding: 0 2rem 0.75rem 2rem; 
+    font-size: 0.875rem;
+    color: #afafaf;
+
+}
+
+.disclamerText a {
+    font-weight: 500;
+}
+
+.disclamerText a:hover {
+    text-decoration: underline;
+}
+
+/* .footerContent div:hover {
+    background-color: #dde2eb;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    box-shadow:
+    0 0.6px 2px rgba(0, 0, 0, 0.014),
+    0 1.4px 4.7px rgba(0, 0, 0, 0.02),
+    0 2.6px 8.9px rgba(0, 0, 0, 0.025),
+    0 4.7px 15.9px rgba(0, 0, 0, 0.03),
+    0 8.8px 29.7px rgba(0, 0, 0, 0.036),
+    0 21px 71px rgba(0, 0, 0, 0.05)
+  ;
+} */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+    .gereksizFlex {
+        min-height: 555px;
+}
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+    .gereksizFlex {
+        min-height: 635px;
+}
+}
