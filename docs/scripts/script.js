@@ -74,6 +74,11 @@ function action(i) {
     }
 }
 
+function clearFrank() {
+    document.getElementById('notLink').style.display = 'none'
+    textInputDOM.style.borderColor = '#C1D2DB'
+}
+
 // 3. Prepare results
     // 3a grab URL from backend (this case grab from 2e)
 function mockDataGrab() {
@@ -129,4 +134,24 @@ function pressEnter(ele) {
         triggerDOM.click() 
     }
 }
+
+
+
+
+const sarcasticPlaceholder = [
+    'your massive gdrive url',
+    'your ultra long dropbox url',
+    'your extra long oneshare url',
+    'your super long torrent magnet url',
+    'extremely long psn profile url',
+    '10km long youtube share url',
+    'some extra ultra long url',
+    'your super long heroku url',
+    'unreadable aws project url',
+    'relatively short github share url',
+]
+
+function randomPick() {
+    return sarcasticPlaceholder[Math.floor(Math.random() * sarcasticPlaceholder.length)];
+} 
 
